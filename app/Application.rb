@@ -14,4 +14,8 @@ class Application < Sinatra::Base
     [200, ["I am also being delivered in the rack format!"]]
   end
 
+  get '/erb' do
+    erb :index, :format => :html5
+  end
+
 end
